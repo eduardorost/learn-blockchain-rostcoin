@@ -2,6 +2,7 @@
 # Run with poetry
 
 poetry install
+
 BLOCKCHAIN_RECEIVER=Eduardo poetry run python main.py
 
 # Run with docker
