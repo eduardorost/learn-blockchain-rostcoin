@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  app1:
+    build: .
+    ports:
+      - "5001:5000"
+    environment:
+      - BLOCKCHAIN_RECEIVER=Eduardo
+
+  app2:
+    build: .
+    ports:
+      - "5002:5000"
+    environment:
+      - BLOCKCHAIN_RECEIVER=Pedro
+
+  app3:
+    build: .
+    ports:
+      - "5003:5000"
+    environment:
+      - BLOCKCHAIN_RECEIVER=Maria
